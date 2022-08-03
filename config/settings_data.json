@@ -17,7 +17,7 @@
       "heading_scale": 100,
       "type_body_font": "assistant_n4",
       "body_scale": 100,
-      "page_width": 1200,
+      "page_width": 1900,
       "spacing_sections": 0,
       "spacing_grid_horizontal": 8,
       "spacing_grid_vertical": 8,
@@ -101,18 +101,36 @@
       "sections": {
         "announcement-bar": {
           "type": "announcement-bar",
+          "settings": {
+            "color_scheme": "accent-3"
+          },
           "blocks": {
             "announcement-bar-0": {
               "type": "announcement",
               "settings": {
-                "text": "Welcome to our store",
-                "color_scheme": "background-1",
-                "link": ""
+                "text": "100% laborgezüchtete Diamanten & recyceltes Gold",
+                "link": "#"
+              }
+            },
+            "announcement-bar-1": {
+              "type": "announcement",
+              "settings": {
+                "text": "Kostenloser & versicherter Expressversand",
+                "link": "#"
+              }
+            },
+            "announcement-bar-2": {
+              "type": "announcement",
+              "settings": {
+                "text": "Kontaktiere unseren Whatsapp-Concierge:+49 69 94323230",
+                "link": "#"
               }
             }
           },
           "block_order": [
-            "announcement-bar-0"
+            "announcement-bar-0",
+            "announcement-bar-1",
+            "announcement-bar-2"
           ]
         },
         "header": {
