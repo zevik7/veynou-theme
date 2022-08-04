@@ -138,12 +138,12 @@
           "logo_width": 90,
           "logo_position": "top-center",
           "menu": "main-menu",
-          "menu_type_desktop": "dropdown",
+          "menu_type_desktop": "mega",
           "show_line_separator": false,
           "enable_sticky_header": true,
           "margin_bottom": 0,
-          "padding_top": 4,
-          "padding_bottom": 8
+          "padding_top": 8,
+          "padding_bottom": 0
         }
       },
       "footer": {

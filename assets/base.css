@@ -2261,6 +2261,7 @@ input[type='checkbox'] {
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  box-shadow: 0 .5rem 1rem #00000008;
 }
 
 @media screen and (min-width: 990px) {
@@ -2282,10 +2283,6 @@ input[type='checkbox'] {
     grid-template-areas:
       'left-icon heading icons'
       'navigation navigation navigation';
-  }
-
-  .header:not(.header--middle-left) .header__inline-menu {
-    margin-top: 1.05rem;
   }
 }
 
@@ -2592,6 +2589,7 @@ details[open] > .header__submenu {
   margin-left: -1.2rem;
   grid-area: navigation;
   display: none;
+  font-family: var(--font-heading-family);
 }
 
 .header--top-center .header__inline-menu,
@@ -2622,9 +2620,32 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
+  position: relative;
+  margin: 0 21px;
+  padding-top: 1.2rem;
+  padding-bottom: 20px;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .2em;
+}
+
+.header__menu-item:after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: all .2s ease;
+}
+
+.header__menu-item:hover::after {
+  width: 100%;
 }
 
 .header__menu-item:hover {
@@ -2633,34 +2654,6 @@ details[open] > .header__submenu {
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
-}
-
-.header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-}
-
-details[open] > .header__menu-item {
-  text-decoration: underline;
-}
-
-details[open]:hover > .header__menu-item {
-  text-decoration-thickness: 0.2rem;
-}
-
-details[open] > .header__menu-item .icon-caret {
-  transform: rotate(180deg);
-}
-
-.header__active-menu-item {
-  transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-}
-
-.header__menu-item:hover .header__active-menu-item {
-  text-decoration-thickness: 0.2rem;
 }
 
 .header__submenu {
