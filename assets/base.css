@@ -2169,14 +2169,14 @@ input[type='checkbox'] {
 
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
-  z-index: 4;
+  z-index: 1;
 }
 
 .announcement-bar {
   color: var(--color-foreground);
 }
 
-.announcement-bar .inner-bar {
+.announcement-bar .inner-bar .for-desktop {
   width: 80%;
   margin: auto;
   padding: 2px 0;
@@ -2184,6 +2184,23 @@ input[type='checkbox'] {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.announcement-bar .inner-bar .for-mobile {
+  display: none;
+}
+
+.announcement-bar .inner-bar .for-mobile .swiper {
+  height: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .announcement-bar .inner-bar .for-desktop {
+    display: none;
+  }
+  .announcement-bar .inner-bar .for-mobile {
+    display: block;
+  }
 }
 
 .announcement-bar__link {
