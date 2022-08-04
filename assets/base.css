@@ -31,6 +31,12 @@
   --gradient-background: var(--gradient-base-accent-2);
 }
 
+.color-accent-3 {
+  --color-foreground: #fff;
+  --color-background: #014034;
+  --gradient-background: #014034;
+}
+
 .color-foreground-outline-button {
   --color-foreground: var(--color-base-outline-button-labels);
 }
@@ -43,6 +49,10 @@
   --color-foreground: var(--color-base-accent-2);
 }
 
+.color-foreground-accent-3 {
+  --color-foreground: #014034;
+}
+
 :root,
 .color-background-1 {
   --color-link: var(--color-base-outline-button-labels);
@@ -52,7 +62,8 @@
 .color-background-2,
 .color-inverse,
 .color-accent-1,
-.color-accent-2 {
+.color-accent-2,
+.color-accent-3 {
   --color-link: var(--color-foreground);
   --alpha-link: 0.7;
 }
@@ -68,7 +79,8 @@
 .color-background-2,
 .color-inverse,
 .color-accent-1,
-.color-accent-2 {
+.color-accent-2,
+.color-accent-3 {
   --color-button: var(--color-foreground);
   --color-button-text: var(--color-background);
 }
@@ -82,7 +94,8 @@
 
 .color-background-2 .button--secondary,
 .color-accent-1 .button--secondary,
-.color-accent-2 .button--secondary {
+.color-accent-2 .button--secondary, 
+.color-accent-3 .button--secondary {
   --color-button: var(--color-background);
   --color-button-text: var(--color-foreground);
 }
@@ -102,7 +115,8 @@
 .color-background-2 .button--tertiary,
 .color-inverse .button--tertiary,
 .color-accent-1 .button--tertiary,
-.color-accent-2 .button--tertiary {
+.color-accent-2 .button--tertiary,
+.color-accent-3 .button--tertiary {
   --color-button: var(--color-foreground);
   --color-button-text: var(--color-foreground);
 }
@@ -117,7 +131,8 @@
 .color-background-2,
 .color-inverse,
 .color-accent-1,
-.color-accent-2 {
+.color-accent-2, 
+.color-accent-3 {
   --color-badge-background: var(--color-background);
   --color-badge-border: var(--color-background);
   --alpha-badge-border: 1;
@@ -134,7 +149,8 @@
 }
 
 .color-accent-1,
-.color-accent-2 {
+.color-accent-2, 
+.color-accent-3 {
   --color-card-hover: var(--color-base-solid-button-labels);
 }
 
@@ -149,6 +165,10 @@
 
 .color-icon-accent-2 {
   --color-icon: rgb(var(--color-base-accent-2));
+}
+
+.color-icon-color-accent-3 {
+  --color-icon: #014034;
 }
 
 .color-icon-outline-button {
@@ -2149,42 +2169,58 @@ input[type='checkbox'] {
 
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
-  z-index: 4;
+  z-index: 1;
 }
 
 .announcement-bar {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  color: rgb(var(--color-foreground));
+  color: var(--color-foreground);
+}
+
+.announcement-bar .inner-bar .for-desktop {
+  width: 80%;
+  margin: auto;
+  padding: 2px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.announcement-bar .inner-bar .for-mobile {
+  display: none;
+}
+
+.announcement-bar .inner-bar .for-mobile .swiper {
+  height: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .announcement-bar .inner-bar .for-desktop {
+    display: none;
+  }
+  .announcement-bar .inner-bar .for-mobile {
+    display: block;
+  }
 }
 
 .announcement-bar__link {
   display: block;
   width: 100%;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   text-decoration: none;
-}
-
-.announcement-bar__link:hover {
-  color: rgb(var(--color-foreground));
-  background-color: rgba(var(--color-card-hover), 0.06);
-}
-
-.announcement-bar__link .icon-arrow {
-  display: inline-block;
-  pointer-events: none;
-  margin-left: 0.8rem;
-  vertical-align: middle;
-  margin-bottom: 0.2rem;
 }
 
 .announcement-bar__link .announcement-bar__message {
   padding: 0;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .announcement-bar__message {
   padding: 1rem 0;
   margin: 0;
   letter-spacing: 0.1rem;
+  font-size: 12px;
 }
 
 /* section-header */
