@@ -54,8 +54,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
+            "heading": "<p>Bekannt Aus<\/p>",
+            "heading_size": "h2"
           }
         },
         "text": {
