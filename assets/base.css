@@ -2652,6 +2652,10 @@ details[open] > .header__submenu {
   color: rgb(var(--color-foreground));
 }
 
+.header__menu-item:hover ~ .mega-menu__content {
+  opacity: 1;
+}
+
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
 }
