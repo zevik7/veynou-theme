@@ -2,9 +2,6 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 82vw;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .banner__box {
@@ -75,10 +72,11 @@
 @media screen and (min-width: 750px) {
   .banner {
     flex-direction: row;
+    margin: 0 2vw;
   }
 
   .banner--small:not(.banner--adapt) {
-    min-height: 42rem;
+    min-height: 52rem;
   }
 
   .banner--medium:not(.banner--adapt) {
@@ -132,6 +130,11 @@
   .banner__content.banner__content--bottom-right {
     align-items: flex-end;
     justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 1275px) {
+  .banner {
+    margin: 0 8vw;
   }
 }
 

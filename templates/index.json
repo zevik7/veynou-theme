@@ -37,13 +37,13 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/VEYNOU-Header-Image-Homepage_1600x_0b663740-b86a-465c-862d-e6615ca702a6.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "medium",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "bottom-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
