@@ -84,3 +84,30 @@
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
 }
+
+.rich-text__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rich-text__text .logo_item span svg {
+  width: 8rem;
+  height: fit-content;
+  color: white;
+}
+
+.rich-text__text .logo_item span svg g {
+  fill: #909090;
+}
+
+.rich-text__text .logo_item svg {
+  color: blue;
+}
+
+.rich-text__heading span {
+  color: #909090;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
