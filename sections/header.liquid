@@ -79,27 +79,29 @@
 </style>
 
 {%- style -%}
-  .header {
-    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
-  }
 
+.header {
+  padding-top: {{section.settings.padding_top | times: 0.5 | round: 0}}px;
+  padding-bottom: {{section.settings.padding_bottom | times: 0.5 | round: 0}}px;
+}
+
+.section-header {
+  margin-bottom: {{section.settings.margin_bottom | times: 0.75 | round: 0}}px;
+}
+
+@media screen and(min-width: 750px) {
   .section-header {
-    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+    margin-bottom: {{section.settings.margin_bottom}}px;
   }
+}
 
-  @media screen and (min-width: 750px) {
-    .section-header {
-      margin-bottom: {{ section.settings.margin_bottom }}px;
-    }
+@media screen and(min-width: 990px) {
+  .header {
+    padding-top: {{section.settings.padding_top}}px;
+    padding-bottom: {{section.settings.padding_bottom}}px;
   }
+}
 
-  @media screen and (min-width: 990px) {
-    .header {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
 {%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -447,26 +449,40 @@
                   <header-menu>
                     <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
-                        <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
-                          {%- for childlink in link.links -%}
-                            <li>
-                              <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                {{ childlink.title | escape }}
-                              </a>
-                              {%- if childlink.links != blank -%}
-                                <ul class="list-unstyled" role="list">
-                                  {%- for grandchildlink in childlink.links -%}
-                                    <li>
-                                      <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                        {{ grandchildlink.title | escape }}
-                                      </a>
-                                    </li>
-                                  {%- endfor -%}
-                                </ul>
+                        <div class="mega-menu__inner">
+                          <div class="mega-menu-inner__col">
+                            <h4 class="mega-menu__label">VEYNOU Verlobungsringe</h4>
+                            <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
+                              {%- for childlink in link.links -%}
+                                <li>
+                                  <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                    {{ childlink.title | escape }}
+                                  </a>
+                                  {%- if childlink.links != blank -%}
+                                    <ul class="list-unstyled" role="list">
+                                      {%- for grandchildlink in childlink.links -%}
+                                        <li>
+                                          <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                            {{ grandchildlink.title | escape }}
+                                          </a>
+                                        </li>
+                                      {%- endfor -%}
+                                    </ul>
+                                  {%- endif -%}
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                          </div>
+  
+                          <div class="mega-menu-inner__col mega-menu__collection">
+                            {%- for childlink in link.links -%}
+                              {% if forloop.index == 0 or forloop.index == 1 or link.type == 'collection_link' %}
+                                {% assign collection = childlink.object %}
+                                {% render 'card-collection', card_collection: collection, media_aspect_ratio: section.settings.image_ratio %}
                               {%- endif -%}
-                            </li>
-                          {%- endfor -%}
-                        </ul>
+                            {%- endfor -%}
+                          </div>
+                        </div>
                       </div>
                       <summary class="header__menu-item list-menu__item link focus-inset">
                         <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
@@ -639,10 +655,12 @@
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
-
+      if (this.predictiveSearch && this.predictiveSearch.isOpen) 
+        return;
+      
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
-        if (this.preventHide) return;
+        if (this.preventHide) 
+          return;
         requestAnimationFrame(this.hide.bind(this));
       } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         if (!this.preventReveal) {
@@ -733,6 +751,7 @@
 {%- endif -%}
 
 {% schema %}
+
 {
   "name": "t:sections.header.name",
   "class": "section-header",
@@ -744,33 +763,27 @@
         {
           "value": "accent-1",
           "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
+        }, {
           "value": "accent-2",
           "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
+        }, {
           "value": "background-1",
           "label": "t:sections.all.colors.background_1.label"
-        },
-        {
+        }, {
           "value": "background-2",
           "label": "t:sections.all.colors.background_2.label"
-        },
-        {
+        }, {
           "value": "inverse",
           "label": "t:sections.all.colors.inverse.label"
         }
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
-    },
-    {
+    }, {
       "type": "image_picker",
       "id": "logo",
       "label": "t:sections.header.settings.logo.label"
-    },
-    {
+    }, {
       "type": "range",
       "id": "logo_width",
       "min": 50,
@@ -779,20 +792,17 @@
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",
       "label": "t:sections.header.settings.logo_width.label"
-    },
-    {
+    }, {
       "type": "select",
       "id": "logo_position",
       "options": [
         {
           "value": "middle-left",
           "label": "t:sections.header.settings.logo_position.options__1.label"
-        },
-        {
+        }, {
           "value": "top-left",
           "label": "t:sections.header.settings.logo_position.options__2.label"
-        },
-        {
+        }, {
           "value": "top-center",
           "label": "t:sections.header.settings.logo_position.options__3.label"
         }
@@ -800,22 +810,19 @@
       "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label",
       "info": "t:sections.header.settings.logo_position.info"
-    },
-    {
+    }, {
       "type": "link_list",
       "id": "menu",
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
-    },
-    {
+    }, {
       "type": "select",
       "id": "menu_type_desktop",
       "options": [
         {
           "value": "dropdown",
           "label": "t:sections.header.settings.menu_type_desktop.options__1.label"
-        },
-        {
+        }, {
           "value": "mega",
           "label": "t:sections.header.settings.menu_type_desktop.options__2.label"
         }
@@ -823,25 +830,21 @@
       "default": "dropdown",
       "label": "t:sections.header.settings.menu_type_desktop.label",
       "info": "t:sections.header.settings.menu_type_desktop.info"
-    },
-    {
+    }, {
       "type": "checkbox",
       "id": "show_line_separator",
       "default": true,
       "label": "t:sections.header.settings.show_line_separator.label"
-    },
-    {
+    }, {
       "type": "checkbox",
       "id": "enable_sticky_header",
       "default": true,
       "label": "t:sections.header.settings.enable_sticky_header.label",
       "info": "t:sections.header.settings.enable_sticky_header.info"
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.all.spacing"
-    },
-    {
+    }, {
       "type": "range",
       "id": "margin_bottom",
       "min": 0,
@@ -850,12 +853,10 @@
       "unit": "px",
       "label": "t:sections.header.settings.margin_bottom.label",
       "default": 0
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
+    }, {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -864,8 +865,7 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
       "default": 20
-    },
-    {
+    }, {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
@@ -874,7 +874,28 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    }, {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-list-collections.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.main-list-collections.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.main-list-collections.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.main-list-collections.settings.image_ratio.label",
+      "info": "t:sections.main-list-collections.settings.image_ratio.info"
     }
   ]
 }
+
 {% endschema %}
