@@ -78,6 +78,97 @@
         "padding_bottom": 0
       }
     },
+    "1659684723adeb721f": {
+      "type": "image-banner",
+      "blocks": {
+        "1659684723ea8bdf8c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "VEYNOU diamonds",
+            "heading_size": "h0"
+          }
+        },
+        "1659684723ea8bdf8c-1": {
+          "type": "text",
+          "settings": {
+            "text": "Created for eternity, without compromise: 100% laboratory-grown diamonds and recycled real gold in 14 and 18 carats.",
+            "text_style": "body"
+          }
+        },
+        "1659684723ea8bdf8c-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn more",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1659684723ea8bdf8c-0",
+        "1659684723ea8bdf8c-1",
+        "1659684723ea8bdf8c-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VEYNOU-Homepage-Banner-Image-VEYNOU-lab-grown-diamonds-beige-mobile.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "transparent",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "16596846677d8e4913": {
+      "type": "image-with-text",
+      "blocks": {
+        "1659684667da466ada-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1659684667da466ada-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1659684667da466ada-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1659684667da466ada-0",
+        "1659684667da466ada-1",
+        "1659684667da466ada-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -186,6 +277,8 @@
   "order": [
     "image_banner",
     "rich_text",
+    "1659684723adeb721f",
+    "16596846677d8e4913",
     "collage",
     "video",
     "multicolumn"
