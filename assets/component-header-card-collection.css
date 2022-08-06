@@ -1,0 +1,20 @@
+.header-card-collection {
+}
+
+.header-card-collection .card__media {
+  width: 100%;
+}
+
+.header-card-collection .card__heading {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.header-card-collection .card__caption {
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+}
