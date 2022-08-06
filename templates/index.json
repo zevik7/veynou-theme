@@ -1,28 +1,29 @@
 {
   "sections": {
-    "image_banner": {
+    "16597111698a8341bd": {
       "type": "image-banner",
       "blocks": {
-        "heading": {
+        "16597111693a2b361a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Beschenke dich mit nachhaltigem Diamantschmuck",
+            "heading": "Treat yourself to sustainable diamond jewellery",
             "heading_size": "h2"
           }
         },
-        "text": {
+        "16597111693a2b361a-1": {
           "type": "text",
           "settings": {
-            "text": "Entdecke unsere sofort lieferbaren Highlights.",
-            "text_style": "body"
+            "text": "Discover our immediately available highlights.",
+            "text_style": "body",
+            "color_scheme": "text-white"
           }
         },
-        "button": {
+        "16597111693a2b361a-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Jetzt entdecken",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "Discover now",
+            "button_link_1": "shopify:\/\/collections",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -30,22 +31,22 @@
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "16597111693a2b361a-0",
+        "16597111693a2b361a-1",
+        "16597111693a2b361a-2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/VEYNOU-Header-Image-Homepage_1600x_0b663740-b86a-465c-862d-e6615ca702a6.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "small",
+        "image_height": "upper-medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "bottom-left",
-        "show_text_box": false,
+        "show_text_box": true,
         "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "rich_text": {
@@ -92,14 +93,23 @@
           "type": "text",
           "settings": {
             "text": "Created for eternity, without compromise: 100% laboratory-grown diamonds and recycled real gold in 14 and 18 carats.",
-            "text_style": "body"
+            "text_style": "body",
+            "color_scheme": "text-black"
+          }
+        },
+        "9934f7f7-acfa-4798-aa09-d7335d549142": {
+          "type": "text",
+          "settings": {
+            "text": "Our diamonds are produced in an environmentally friendly manner, with transparent origin and under the highest quality standards in the laboratory and certified by GIA\/IGI.",
+            "text_style": "body",
+            "color_scheme": "text-black"
           }
         },
         "1659684723ea8bdf8c-2": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn more",
-            "button_link_1": "",
+            "button_link_1": "shopify:\/\/blogs\/news",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -110,6 +120,7 @@
       "block_order": [
         "1659684723ea8bdf8c-0",
         "1659684723ea8bdf8c-1",
+        "9934f7f7-acfa-4798-aa09-d7335d549142",
         "1659684723ea8bdf8c-2"
       ],
       "settings": {
@@ -120,167 +131,16 @@
         "desktop_content_position": "bottom-left",
         "show_text_box": true,
         "desktop_content_alignment": "left",
-        "color_scheme": "transparent",
+        "color_scheme": "accent-2",
         "mobile_content_alignment": "left",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "16596846677d8e4913": {
-      "type": "image-with-text",
-      "blocks": {
-        "1659684667da466ada-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "1659684667da466ada-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "1659684667da466ada-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1659684667da466ada-0",
-        "1659684667da466ada-1",
-        "1659684667da466ada-2"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
-    "image_banner",
+    "16597111698a8341bd",
     "rich_text",
-    "1659684723adeb721f",
-    "16596846677d8e4913",
-    "collage",
-    "video",
-    "multicolumn"
+    "1659684723adeb721f"
   ]
 }
