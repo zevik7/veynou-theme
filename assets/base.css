@@ -2648,6 +2648,10 @@ details[open] > .header__submenu {
   width: 100%;
 }
 
+[id^="Details-HeaderMenu-"]:hover > .header__menu-item::after {
+  width: 100%;
+}
+
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));
 }

@@ -480,7 +480,7 @@
                             {%- for childlink in link.links -%}
                               {% if forloop.index == 0 or forloop.index == 1 or link.type == 'collection_link' %}
                                 {% assign collection = childlink.object %}
-                                {% render 'card-collection', card_collection: collection, media_aspect_ratio: section.settings.image_ratio %}
+                                {% render 'header-card-collection', card_collection: collection, media_aspect_ratio: section.settings.image_ratio %}
                               {%- endif -%}
                             {%- endfor -%}
                           </div>
