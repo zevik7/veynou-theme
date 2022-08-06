@@ -447,13 +447,17 @@
                 {%- if link.links != blank -%}
                   <header-menu>
                     <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
-                      <summary class="header__menu-item list-menu__item link focus-inset {%- if link.child_active %} header__active-menu-item{% endif %}">
+                      <summary class="header__menu-item list-menu__item link focus-inset">
                         <span>{{ link.title | escape }}</span>
                       </summary>
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                         <div class="mega-menu__inner">
-                          <div class="mega-menu-inner__col">
-                            <h4 class="mega-menu__label">VEYNOU Verlobungsringe</h4>
+                          <div class="mega-menu-inner__left">
+                            <h4 class="mega-menu__label">
+                              {%- if forloop.index == 1 -%}VEYNOU Verlobungsringe{%- endif -%}
+                              {%- if forloop.index == 2 -%}KATEGORIEN{%- endif -%}
+                              {%- if forloop.index == 3 -%}ÜBER VEYNOU{%- endif -%}
+                            </h4>
                             <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                               {%- for childlink in link.links -%}
                                 <li>
@@ -476,11 +480,17 @@
                             </ul>
                           </div>
   
-                          <div class="mega-menu-inner__col mega-menu__collection">
-                            {%- for childlink in link.links -%}
-                              {% if forloop.index == 0 or forloop.index == 1 or link.type == 'collection_link' %}
-                                {% assign collection = childlink.object %}
-                                {% render 'header-card-collection', card_collection: collection, media_aspect_ratio: section.settings.image_ratio %}
+                          <div class="mega-menu-inner__right">
+                            {% assign count = 0 %}
+                            {%- for childlink in link.links reversed -%}
+                              {% if count < 2 %}
+                                {%- if  childlink.type == 'collection_link' and childlink.object.featured_image != nil -%}
+                                  {% assign count = count | plus: 1 %}
+                                  {% assign collection = childlink.object %}
+                                  <div class="mega-menu__collection">
+                                    {% render 'header-card-collection', card_collection: collection, media_aspect_ratio: section.settings.image_ratio %}
+                                  </div>
+                                {%- endif -%}
                               {%- endif -%}
                             {%- endfor -%}
                           </div>
@@ -710,19 +720,21 @@
 
 
   //For header menu
-  const headerMenu = document.querySelector('[id^="Details-HeaderMenu-"]');
-  const summary = headerMenu.querySelector('summary');
+  const headerMenus = document.querySelectorAll('[id^="Details-HeaderMenu-"]');
 
-  headerMenu.addEventListener('mouseover', (event) => {
-    event.currentTarget.setAttribute('open', '');
-    summary.setAttribute('aria-expanded', true);
-  });
+  headerMenus.forEach(menu => {
+    const summary = menu.querySelector('summary');
 
-  headerMenu.addEventListener('mouseout', (event) => {
-    event.currentTarget.removeAttribute('open')
-    summary.setAttribute('aria-expanded', false);
-  });
-
+    menu.addEventListener('mouseover', (event) => {
+      event.currentTarget.setAttribute('open', '');
+      summary.setAttribute('aria-expanded', true);
+    });
+  
+    menu.addEventListener('mouseout', (event) => {
+      event.currentTarget.removeAttribute('open')
+      summary.setAttribute('aria-expanded', false);
+    });
+  })
 {% endjavascript %}
 
 <script type="application/ld+json">

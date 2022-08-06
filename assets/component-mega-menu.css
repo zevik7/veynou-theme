@@ -28,8 +28,16 @@
   padding: 0 10px;
 }
 
-.mega-menu-inner__col {
+.mega-menu-inner__left, .mega-menu-inner__right {
   margin: 20px 40px;
+}
+
+.mega-menu-inner__right {
+  width: 660px;
+  min-width: 425px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .mega-menu__inner .mega-menu__label {
@@ -91,6 +99,7 @@
 }
 
 .mega-menu__collection {
+  width: 50%;
 }
 
 .header--top-center .mega-menu__list {
