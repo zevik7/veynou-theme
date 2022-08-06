@@ -57,6 +57,7 @@
 .js .mega-menu__content {
   opacity: 0;
   transform: translateY(-1.5rem);
+  transition: all 0.4s ease;
 }
 
 .mega-menu[open] .mega-menu__content {

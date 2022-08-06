@@ -398,6 +398,9 @@
                 {%- if link.links != blank -%}
                   <header-menu>
                     <details id="Details-HeaderMenu-{{ forloop.index }}">
+                      <summary class="header__menu-item list-menu__item link focus-inset {%- if link.child_active %} header__active-menu-item{% endif %}">
+                        <span>{{ link.title | escape }}</span>
+                      </summary>
                       <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure gradient caption-large motion-reduce global-settings-popup" role="list" tabindex="-1">
                         {%- for childlink in link.links -%}
                           <li>
@@ -425,9 +428,6 @@
                           </li>
                         {%- endfor -%}
                       </ul>
-                      <summary class="header__menu-item list-menu__item link focus-inset {%- if link.child_active %} header__active-menu-item{% endif %}">
-                        <span>{{ link.title | escape }}</span>
-                      </summary>
                     </details>
                   </header-menu>
                 {%- else -%}
@@ -447,6 +447,9 @@
                 {%- if link.links != blank -%}
                   <header-menu>
                     <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+                      <summary class="header__menu-item list-menu__item link focus-inset {%- if link.child_active %} header__active-menu-item{% endif %}">
+                        <span>{{ link.title | escape }}</span>
+                      </summary>
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                         <div class="mega-menu__inner">
                           <div class="mega-menu-inner__col">
@@ -483,9 +486,6 @@
                           </div>
                         </div>
                       </div>
-                      <summary class="header__menu-item list-menu__item link focus-inset {%- if link.child_active %} header__active-menu-item{% endif %}">
-                        <span>{{ link.title | escape }}</span>
-                      </summary>
                     </details>
                   </header-menu>
                 {%- else -%}
@@ -707,6 +707,22 @@
   }
 
   customElements.define('sticky-header', StickyHeader);
+
+
+  //For header menu
+  const headerMenu = document.querySelector('[id^="Details-HeaderMenu-"]');
+  const summary = headerMenu.querySelector('summary');
+
+  headerMenu.addEventListener('mouseover', (event) => {
+    event.currentTarget.setAttribute('open', '');
+    summary.setAttribute('aria-expanded', true);
+  });
+
+  headerMenu.addEventListener('mouseout', (event) => {
+    event.currentTarget.removeAttribute('open')
+    summary.setAttribute('aria-expanded', false);
+  });
+
 {% endjavascript %}
 
 <script type="application/ld+json">
