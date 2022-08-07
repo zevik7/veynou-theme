@@ -1,28 +1,29 @@
 {
   "sections": {
-    "image_banner": {
+    "16597111698a8341bd": {
       "type": "image-banner",
       "blocks": {
-        "heading": {
+        "16597111693a2b361a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Beschenke dich mit nachhaltigem Diamantschmuck",
+            "heading": "Treat yourself to sustainable diamond jewellery",
             "heading_size": "h2"
           }
         },
-        "text": {
+        "16597111693a2b361a-1": {
           "type": "text",
           "settings": {
-            "text": "Entdecke unsere sofort lieferbaren Highlights.",
-            "text_style": "body"
+            "text": "Discover our immediately available highlights.",
+            "text_style": "body",
+            "color_scheme": "text-white"
           }
         },
-        "button": {
+        "16597111693a2b361a-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Jetzt entdecken",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "Discover now",
+            "button_link_1": "shopify:\/\/collections",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -30,22 +31,22 @@
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "16597111693a2b361a-0",
+        "16597111693a2b361a-1",
+        "16597111693a2b361a-2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/VEYNOU-Header-Image-Homepage_1600x_0b663740-b86a-465c-862d-e6615ca702a6.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "small",
+        "image_height": "upper-medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "bottom-left",
-        "show_text_box": false,
+        "show_text_box": true,
         "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "rich_text": {
@@ -75,147 +76,71 @@
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 0
+        "padding_bottom": 40
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
+    "1659684723adeb721f": {
+      "type": "image-banner",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "1659684723ea8bdf8c-0": {
+          "type": "heading",
           "settings": {
-            "collection": ""
+            "heading": "VEYNOU diamonds",
+            "heading_size": "h0"
           }
         },
-        "product": {
-          "type": "product",
+        "1659684723ea8bdf8c-1": {
+          "type": "text",
           "settings": {
-            "product": "",
-            "second_image": false
+            "text": "Created for eternity, without compromise: 100% laboratory-grown diamonds and recycled real gold in 14 and 18 carats.",
+            "text_style": "body",
+            "color_scheme": "text-black"
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "9934f7f7-acfa-4798-aa09-d7335d549142": {
+          "type": "text",
           "settings": {
-            "collection": ""
+            "text": "Our diamonds are produced in an environmentally friendly manner, with transparent origin and under the highest quality standards in the laboratory and certified by GIA\/IGI.",
+            "text_style": "body",
+            "color_scheme": "text-black"
+          }
+        },
+        "1659684723ea8bdf8c-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn more",
+            "button_link_1": "shopify:\/\/blogs\/news",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
+        "1659684723ea8bdf8c-0",
+        "1659684723ea8bdf8c-1",
+        "9934f7f7-acfa-4798-aa09-d7335d549142",
+        "1659684723ea8bdf8c-2"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify:\/\/shop_images\/VEYNOU-Homepage-Banner-Image-VEYNOU-lab-grown-diamonds-beige-mobile.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
   "order": [
-    "image_banner",
+    "16597111698a8341bd",
     "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "1659684723adeb721f"
   ]
 }
