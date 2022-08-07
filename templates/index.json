@@ -105,110 +105,6 @@
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1659878813f6ff6c59": {
       "type": "image-with-text",
       "blocks": {
@@ -226,25 +122,25 @@
             "text_style": "body"
           }
         },
-        "1659878813ae8502c9-2": {
-          "type": "button",
+        "d8696168-b6e5-4a08-9269-c802240096f3": {
+          "type": "link_list",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "label": "Zu unserer Kollektion",
+            "url": "shopify:\/\/collections\/zu-unseren-armbandern"
           }
         }
       },
       "block_order": [
         "1659878813ae8502c9-0",
         "1659878813ae8502c9-1",
-        "1659878813ae8502c9-2"
+        "d8696168-b6e5-4a08-9269-c802240096f3"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/VEYNOU-Diamantschmuck-Kollektion-mit-nachhaltigen-Diamanten_99407286-4d47-46d1-b536-6397b946803e.jpg",
         "height": "adapt",
         "desktop_image_width": "large",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
@@ -270,25 +166,25 @@
             "text_style": "body"
           }
         },
-        "1659879477db805652-2": {
-          "type": "button",
+        "b0c373ce-8068-441f-93d6-451df62a074c": {
+          "type": "link_list",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "label": "Erfahre mehr über VEYNOU",
+            "url": "shopify:\/\/collections\/sofort-lieferbar"
           }
         }
       },
       "block_order": [
         "1659879477db805652-0",
         "1659879477db805652-1",
-        "1659879477db805652-2"
+        "b0c373ce-8068-441f-93d6-451df62a074c"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/VEYNOU-laborgezuchtete-Diamanten-Ringe-18kt.-Goldjpg-2_8cd003f4-7095-4670-b5e1-a87312cdeb1b.webp",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
@@ -302,9 +198,6 @@
     "image_banner",
     "rich_text",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn",
     "1659878813f6ff6c59",
     "16598794778249b532"
   ]
