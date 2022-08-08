@@ -53,10 +53,10 @@
               <p class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.caption | escape }}</p>
             {%- when 'text' -%}
               <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-            {%- when 'button' -%}
-              {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
-                  {{ block.settings.button_label | escape }}
+            {%- when 'link_list' -%}
+              {%- if block.settings.label != blank -%}
+                <a{% if block.settings.url == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.url }}"{% endif %} class="link color-background-1" {{ block.shopify_attributes }}>
+                  {{ block.settings.label | escape }}
                 </a>
               {%- endif -%}
           {%- endcase -%}
@@ -380,21 +380,20 @@
       ]
     },
     {
-      "type": "button",
-      "name": "t:sections.image-with-text.blocks.button.name",
+      "type": "link_list",
+      "name": "Link List",
       "limit": 1,
       "settings": [
         {
           "type": "text",
-          "id": "button_label",
-          "default": "Button label",
-          "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
-          "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+          "id": "label",
+          "default": "Link label",
+          "label": "Link label"
         },
         {
           "type": "url",
-          "id": "button_link",
-          "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+          "id": "url",
+          "label": "URL"
         }
       ]
     }
@@ -410,7 +409,7 @@
           "type": "text"
         },
         {
-          "type": "button"
+          "type": "link_list"
         }
       ]
     }

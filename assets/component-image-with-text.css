@@ -313,6 +313,7 @@
 .image-with-text__heading {
   word-break: break-word;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 .image-with-text__text p {

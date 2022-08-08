@@ -154,25 +154,25 @@
             "text_style": "body"
           }
         },
-        "1659878813ae8502c9-2": {
-          "type": "button",
+        "d8696168-b6e5-4a08-9269-c802240096f3": {
+          "type": "link_list",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "label": "Zu unserer Kollektion",
+            "url": "shopify:\/\/collections\/zu-unseren-armbandern"
           }
         }
       },
       "block_order": [
         "1659878813ae8502c9-0",
         "1659878813ae8502c9-1",
-        "1659878813ae8502c9-2"
+        "d8696168-b6e5-4a08-9269-c802240096f3"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/VEYNOU-Diamantschmuck-Kollektion-mit-nachhaltigen-Diamanten_99407286-4d47-46d1-b536-6397b946803e.jpg",
         "height": "adapt",
         "desktop_image_width": "large",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
@@ -198,25 +198,25 @@
             "text_style": "body"
           }
         },
-        "1659879477db805652-2": {
-          "type": "button",
+        "b0c373ce-8068-441f-93d6-451df62a074c": {
+          "type": "link_list",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "label": "Erfahre mehr über VEYNOU",
+            "url": "shopify:\/\/collections\/sofort-lieferbar"
           }
         }
       },
       "block_order": [
         "1659879477db805652-0",
         "1659879477db805652-1",
-        "1659879477db805652-2"
+        "b0c373ce-8068-441f-93d6-451df62a074c"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/VEYNOU-laborgezuchtete-Diamanten-Ringe-18kt.-Goldjpg-2_8cd003f4-7095-4670-b5e1-a87312cdeb1b.webp",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
@@ -230,9 +230,6 @@
     "16597111698a8341bd",
     "rich_text",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn",
     "1659878813f6ff6c59",
     "16598794778249b532"
     "1659684723adeb721f"
