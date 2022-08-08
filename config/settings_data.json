@@ -184,8 +184,8 @@
           "d751f4db-2dcf-4f32-8f8b-6c50071a6285": {
             "type": "text",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "",
+              "subtext": ""
             }
           },
           "footer-1": {
