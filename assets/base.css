@@ -236,12 +236,42 @@ html.no-js .no-js-hidden {
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .page-width-desktop {
   padding: 0;
   margin: 0 auto;
-  max-width: var(--page-width);
+}
+
+@media screen and (min-width: 750px) {
+  .page-width {
+    padding: 0 5rem;
+  }
+
+  .page-width--narrow {
+    padding: 0 9rem;
+  }
+
+  .page-width-desktop {
+    padding: 0;
+  }
+
+  .page-width-tablet {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .page-width--narrow {
+    max-width: 72.6rem;
+    padding: 0;
+  }
+
+  .page-width-desktop {
+    max-width: var(--page-width);
+    padding: 0 5rem;
+  }
 }
 
 .isolate {
@@ -2245,6 +2275,7 @@ input[type="checkbox"] {
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  
 }
 
 .header-wrapper--border-bottom {
@@ -2276,7 +2307,7 @@ input[type="checkbox"] {
 
   .header--top-center {
     grid-template-areas:
-      "left-icon heading icons"
+      "icons heading left-icon"
       "navigation navigation navigation";
   }
 }
@@ -2349,7 +2380,7 @@ input[type="checkbox"] {
 .header__icons {
   display: flex;
   grid-area: icons;
-  justify-self: end;
+  align-items: center;
 }
 
 .header__icon:not(.header__icon--summary),
@@ -2421,7 +2452,7 @@ menu-drawer + .header__search {
 
 .header > .header__search {
   grid-area: left-icon;
-  justify-self: start;
+  justify-self: end;
 }
 
 .header:not(.header--has-menu) * > .header__search {
