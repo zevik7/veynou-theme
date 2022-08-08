@@ -78,6 +78,50 @@
         "padding_bottom": 0
       }
     },
+    "1659944351b9bd9182": {
+      "type": "image-with-text",
+      "blocks": {
+        "165994435115ed9734-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Entdecke unsere Kollektion",
+            "heading_size": "h1"
+          }
+        },
+        "165994435115ed9734-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Werfe einen Blick auf unsere VEYNOU-Highlights.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "165994435115ed9734-2": {
+          "type": "link_list",
+          "settings": {
+            "label": "Zu unserer Kollektion",
+            "url": "shopify:\/\/collections\/sofort-lieferbar"
+          }
+        }
+      },
+      "block_order": [
+        "165994435115ed9734-0",
+        "165994435115ed9734-1",
+        "165994435115ed9734-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VEYNOU-Diamantschmuck-Kollektion-mit-nachhaltigen-Diamanten_99407286-4d47-46d1-b536-6397b946803e.jpg",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -255,16 +299,59 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "165994444523e6733f": {
+      "type": "image-with-text",
+      "blocks": {
+        "165994444592c375f8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Diamantschmuck neugedacht",
+            "heading_size": "h1"
+          }
+        },
+        "165994444592c375f8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unser Antrieb ist es, ein zukunftsorientiertes & nachhaltiges Unternehmen aufzubauen. VEYNOU wird in einer Welt, in der Minen der Vergangenheit angehören und laborgezüchtete Diamanten<\/p>",
+            "text_style": "body"
+          }
+        },
+        "165994444592c375f8-2": {
+          "type": "link_list",
+          "settings": {
+            "label": "Erfahre mehr über VEYNOU",
+            "url": "shopify:\/\/collections\/sofort-lieferbar"
+          }
+        }
+      },
+      "block_order": [
+        "165994444592c375f8-0",
+        "165994444592c375f8-1",
+        "165994444592c375f8-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VEYNOU-laborgezuchtete-Diamanten-Ringe-18kt.-Goldjpg-2_8cd003f4-7095-4670-b5e1-a87312cdeb1b.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "image_banner",
     "rich_text",
+    "1659944351b9bd9182",
     "featured_collection",
-    "1659878813f6ff6c59",
-    "16598794778249b532",
-    "1659684723adeb721f",
     "1659938780a0a553cb",
-    "1659938794c5c220ec"
+    "1659938794c5c220ec",
+    "165994444523e6733f"
   ]
 }
