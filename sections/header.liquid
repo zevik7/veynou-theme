@@ -26,7 +26,7 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
-<style>
+{%- style -%}
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -76,7 +76,7 @@
       padding-top: 0.5rem;
     }
   }
-</style>
+{%- endstyle -%}
 
 {%- style -%}
 
@@ -484,12 +484,27 @@
                             {% assign count = 0 %}
                             {%- for childlink in link.links reversed -%}
                               {% if count < 2 %}
+                                <!-- For collection -->
                                 {%- if  childlink.type == 'collection_link' and childlink.object.featured_image != nil -%}
                                   {% assign count = count | plus: 1 %}
                                   {% assign collection = childlink.object %}
-                                  <div class="mega-menu__collection">
+                                  <div class="mega-menu__thumbnail">
                                     {% render 'header-card-collection', card_collection: collection, media_aspect_ratio: section.settings.image_ratio %}
                                   </div>
+                                {%- endif -%}
+                            
+                                <!-- For page -->
+                                {%- if  childlink.type == 'page_link' and childlink.object.url != blank -%}
+                                  {% assign count = count | plus: 1 %}
+                                  <!-- Find page in page blocks -->
+                                  {% assign pageBlock = childlink.object %}
+                                  {%- for block in section.blocks -%}
+                                    {%- if block.settings.url == pageBlock.url -%}
+                                      <div class="mega-menu__thumbnail">
+                                        {% render 'header-card-collection', card_collection: block.settings, media_aspect_ratio: section.settings.image_ratio %}
+                                      </div>    
+                                    {%- endif -%}
+                                  {%- endfor -%}
                                 {%- endif -%}
                               {%- endif -%}
                             {%- endfor -%}
@@ -920,6 +935,36 @@
       "default": "adapt",
       "label": "t:sections.main-list-collections.settings.image_ratio.label",
       "info": "t:sections.main-list-collections.settings.image_ratio.info"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link_list",
+      "name": "Page Block Info",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Title",
+          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "default": "Description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "image_picker",
+          "id": "featured_image",
+          "label": "t:sections.collage.blocks.image.settings.image.label"
+        }
+      ]
     }
   ]
 }
