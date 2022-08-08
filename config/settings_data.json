@@ -133,6 +133,30 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "adeeced8-2c18-44e3-89c1-591cddac32f1": {
+            "type": "link_list",
+            "settings": {
+              "title": "ÜBER UNS",
+              "description": "LUXURY MADE SUSTAINABLE - DAS IST IN 3 WORTEN DIE VISION VON VEYNOU",
+              "url": "shopify:\/\/pages\/contact",
+              "featured_image": "shopify:\/\/shop_images\/VEYNOU-Team_370x230_2x_dddae64f-31ec-40c4-ae16-9ac96638bd55.webp"
+            }
+          },
+          "6b65bac9-71a8-453e-92dd-51ff7cceefaf": {
+            "type": "link_list",
+            "settings": {
+              "title": "DIE 4CS DER DIAMANTEN",
+              "description": "DIE 4CS: CUT, COLOR, CLARITY UND CARAT, STEHEN FÜR DIE WERTIGKEIT EINES DIAMANTEN",
+              "url": "shopify:\/\/pages\/diamanten-basiswissen-die-4-cs",
+              "featured_image": "shopify:\/\/shop_images\/VEYNOU-Menu-Diamond-Education_370x230_2x_3b6c618e-6b64-4b00-99e1-8ee1ebfd8437.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "adeeced8-2c18-44e3-89c1-591cddac32f1",
+          "6b65bac9-71a8-453e-92dd-51ff7cceefaf"
+        ],
         "settings": {
           "color_scheme": "background-1",
           "logo_width": 90,
