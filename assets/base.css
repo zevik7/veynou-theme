@@ -234,8 +234,9 @@ html.no-js .no-js-hidden {
 }
 
 .page-width {
-  max-width: var(--page-width);
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 5rem;
 }
 
 .page-width-desktop {
@@ -2245,6 +2246,7 @@ input[type="checkbox"] {
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  
 }
 
 .header-wrapper--border-bottom {
@@ -2276,7 +2278,7 @@ input[type="checkbox"] {
 
   .header--top-center {
     grid-template-areas:
-      "left-icon heading icons"
+      "icons heading left-icon"
       "navigation navigation navigation";
   }
 }
@@ -2349,7 +2351,6 @@ input[type="checkbox"] {
 .header__icons {
   display: flex;
   grid-area: icons;
-  justify-self: end;
   align-items: center;
 }
 
@@ -2422,7 +2423,7 @@ menu-drawer + .header__search {
 
 .header > .header__search {
   grid-area: left-icon;
-  justify-self: start;
+  justify-self: end;
 }
 
 .header:not(.header--has-menu) * > .header__search {
