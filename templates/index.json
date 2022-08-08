@@ -7,32 +7,35 @@
           "type": "heading",
           "settings": {
             "heading": "Beschenke dich mit nachhaltigem Diamantschmuck",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "color_scheme": "text-white"
           }
         },
         "text": {
           "type": "text",
           "settings": {
             "text": "Entdecke unsere sofort lieferbaren Highlights.",
-            "text_style": "body"
+            "text_style": "body",
+            "color_scheme": "text-white"
           }
         },
-        "button": {
+        "5300f6d6-e108-4600-baa7-3ddfda55aa53": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Jetzt entdecken",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "DISCOVER NOW",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "color_scheme": "text-black"
           }
         }
       },
       "block_order": [
         "heading",
         "text",
-        "button"
+        "5300f6d6-e108-4600-baa7-3ddfda55aa53"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/VEYNOU-Header-Image-Homepage_1600x_0b663740-b86a-465c-862d-e6615ca702a6.jpg",
@@ -78,48 +81,64 @@
         "padding_bottom": 0
       }
     },
-    "1659944351b9bd9182": {
-      "type": "image-with-text",
+    "165994500297dc3e36": {
+      "type": "image-banner",
       "blocks": {
-        "165994435115ed9734-0": {
+        "165994500274f8382d-0": {
           "type": "heading",
           "settings": {
-            "heading": "Entdecke unsere Kollektion",
-            "heading_size": "h1"
+            "heading": "VEYNOU diamonds",
+            "heading_size": "h2",
+            "color_scheme": "text-black"
           }
         },
-        "165994435115ed9734-1": {
+        "165994500274f8382d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Werfe einen Blick auf unsere VEYNOU-Highlights.<\/p>",
-            "text_style": "body"
+            "text": "Created for eternity, without compromise: 100% laboratory-grown diamonds and recycled real gold in 14 and 18 carats.",
+            "text_style": "body",
+            "color_scheme": "text-black"
           }
         },
-        "165994435115ed9734-2": {
-          "type": "link_list",
+        "8f0f8d09-6292-4b54-a5c1-e77c42d95006": {
+          "type": "text",
           "settings": {
-            "label": "Zu unserer Kollektion",
-            "url": "shopify:\/\/collections\/sofort-lieferbar"
+            "text": "Our diamonds are produced in the laboratory in an environmentally friendly manner, with transparent origin and under the highest quality standards and are certified by GIA\/IGI.",
+            "text_style": "body",
+            "color_scheme": "text-black"
+          }
+        },
+        "165994500274f8382d-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn more",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "color_scheme": "text-black"
           }
         }
       },
       "block_order": [
-        "165994435115ed9734-0",
-        "165994435115ed9734-1",
-        "165994435115ed9734-2"
+        "165994500274f8382d-0",
+        "165994500274f8382d-1",
+        "8f0f8d09-6292-4b54-a5c1-e77c42d95006",
+        "165994500274f8382d-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/VEYNOU-Diamantschmuck-Kollektion-mit-nachhaltigen-Diamanten_99407286-4d47-46d1-b536-6397b946803e.jpg",
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "layout": "image_first",
-        "desktop_content_position": "top",
+        "image": "shopify:\/\/shop_images\/VEYNOU-Homepage-Banner-Image-VEYNOU-lab-grown-diamonds-beige-mobile.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-left",
+        "show_text_box": true,
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "featured_collection": {
@@ -299,59 +318,14 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "165994444523e6733f": {
-      "type": "image-with-text",
-      "blocks": {
-        "165994444592c375f8-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Diamantschmuck neugedacht",
-            "heading_size": "h1"
-          }
-        },
-        "165994444592c375f8-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Unser Antrieb ist es, ein zukunftsorientiertes & nachhaltiges Unternehmen aufzubauen. VEYNOU wird in einer Welt, in der Minen der Vergangenheit angehören und laborgezüchtete Diamanten<\/p>",
-            "text_style": "body"
-          }
-        },
-        "165994444592c375f8-2": {
-          "type": "link_list",
-          "settings": {
-            "label": "Erfahre mehr über VEYNOU",
-            "url": "shopify:\/\/collections\/sofort-lieferbar"
-          }
-        }
-      },
-      "block_order": [
-        "165994444592c375f8-0",
-        "165994444592c375f8-1",
-        "165994444592c375f8-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/VEYNOU-laborgezuchtete-Diamanten-Ringe-18kt.-Goldjpg-2_8cd003f4-7095-4670-b5e1-a87312cdeb1b.webp",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
     "image_banner",
     "rich_text",
-    "1659944351b9bd9182",
+    "165994500297dc3e36",
     "featured_collection",
     "1659938780a0a553cb",
-    "1659938794c5c220ec",
-    "165994444523e6733f"
+    "1659938794c5c220ec"
   ]
 }

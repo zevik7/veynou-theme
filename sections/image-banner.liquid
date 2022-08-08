@@ -14,11 +14,7 @@
 
 
 
-  @media screen and (min-width: 750px) {
-    #Banner-{{ section.id }}::before,
-    #Banner-{{ section.id }} .banner__media::before {
-      padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-      content: '';
+  @media screen an'';
       display: block;
     }
   }
@@ -29,7 +25,11 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
-{%- endstyle -%}
+{%- endstyle d (min-width: 750px) {
+    #Banner-{{ section.id }}::before,
+    #Banner-{{ section.id }} .banner__media::before {
+      padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+      content: -%}
 
 <div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
   {%- if section.settings.image != blank -%}
@@ -93,7 +93,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+            <h2 class="banner__heading {{ block.settings.heading_size }} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
               <span class="block-{{ block.id }}" >{{ block.settings.heading | escape }} </span>
             </h2>
           {%- when 'text' -%}
@@ -101,12 +101,18 @@
               <span class=" color-{{ block.settings.color_scheme }} block-{{ block.id }}" >{{ block.settings.text | escape }} </span>
             </div>
           {%- when 'buttons' -%}
-            <div class="btn-{{ block.id }} banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %}  banner__buttons--multiple{% endif %} " {{ block.shopify_attributes }}>
+            <div  class="btn-{{ block.id }} banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %}  banner__buttons--multiple{% endif %} " {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
-                <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
-              {%- endif -%}
-              {%- if block.settings.button_label_2 != blank -%}
-                <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
+               
+              <a{% if block.settings.button_link_1 == blank %}   class=" btn-165994500274f8382d-2 color-{{ block.settings.color_scheme }}" role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+                
+              </a>
+                {%- endif -%}
+                {%- if block.settings.button_label_2 != blank -%}
+                <a {% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %} btn-{{block.id}} ">{{ block.settings.button_label_2 | escape }}
+                  
+                
+              </a>
               {%- endif -%}
             </div>
         {%- endcase -%}
@@ -340,13 +346,34 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "text-black",
+              "label": "Black"
+            },
+            {
+              "value": "text-white",
+              "label": "White"
+            },
+            {
+              "value": "text-blue",
+              "label": "Blue"
+            }
+          ],
+          "default": "text-white",  
+          "label": "t:sections.all.colors.label",
+          "info": "t:sections.image-banner.settings.color_scheme.info"
         }
       ]
     },
     {
       "type": "text",
       "name": "t:sections.image-banner.blocks.text.name",
-      "limit": 2,
+      "limit": 10,
       "settings": [
         {
           "type": "text",
@@ -437,6 +464,27 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "text-black",
+              "label": "Black"
+            },
+            {
+              "value": "text-white",
+              "label": "White"
+            },
+            {
+              "value": "text-blue",
+              "label": "Blue"
+            }
+          ],
+          "default": "text-white",  
+          "label": "t:sections.all.colors.label",
+          "info": "t:sections.image-banner.settings.color_scheme.info"
         }
       ]
     }

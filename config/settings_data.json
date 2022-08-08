@@ -177,36 +177,76 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Help",
+              "menu": "footer-1"
+            }
+          },
+          "d751f4db-2dcf-4f32-8f8b-6c50071a6285": {
+            "type": "text",
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
-              "menu": "footer"
+              "heading": "Support",
+              "menu": "support"
             }
           },
-          "footer-2": {
+          "f33e39c5-98f1-4d83-a16f-921615731128": {
+            "type": "link_list",
+            "settings": {
+              "heading": "VEYNOU",
+              "menu": "veynou"
+            }
+          },
+          "98da9f32-0366-49e2-b0d7-6c80b15d7108": {
             "type": "text",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Contact",
+              "subtext": ""
+            }
+          },
+          "0962c469-296f-4c47-aa7d-5e31a3c7a104": {
+            "type": "text",
+            "settings": {
+              "heading": "Payment methods",
+              "subtext": ""
+            }
+          },
+          "63884c5d-1abf-4873-964b-a92f9b7c8814": {
+            "type": "text",
+            "settings": {
+              "heading": "Shipping with",
+              "subtext": "<p>30 days free returns<\/p><p>Free insured express shipping<\/p>"
+            }
+          },
+          "a2eebc75-291f-4fc4-af67-9824bc480d0b": {
+            "type": "text",
+            "settings": {
+              "heading": "Follow us",
+              "subtext": ""
             }
           }
         },
         "block_order": [
           "footer-0",
+          "d751f4db-2dcf-4f32-8f8b-6c50071a6285",
           "footer-1",
-          "footer-2"
+          "f33e39c5-98f1-4d83-a16f-921615731128",
+          "98da9f32-0366-49e2-b0d7-6c80b15d7108",
+          "0962c469-296f-4c47-aa7d-5e31a3c7a104",
+          "63884c5d-1abf-4873-964b-a92f9b7c8814",
+          "a2eebc75-291f-4fc4-af67-9824bc480d0b"
         ],
         "settings": {
           "color_scheme": "background-1",
-          "newsletter_enable": true,
+          "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
-          "enable_country_selector": false,
+          "enable_country_selector": true,
           "enable_language_selector": false,
           "payment_enable": true,
           "margin_top": 48,
