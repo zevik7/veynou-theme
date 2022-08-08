@@ -12,6 +12,8 @@
     }
   }
 
+
+
   @media screen and (min-width: 750px) {
     #Banner-{{ section.id }}::before,
     #Banner-{{ section.id }} .banner__media::before {
@@ -87,26 +89,25 @@
     </div>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+    <div  class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.heading | escape }}</span>
+              <span class="block-{{ block.id }}" >{{ block.settings.heading | escape }} </span>
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.text | escape }}</span>
+            <div class=" block-{{block.id}} banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+              <span class=" color-{{ block.settings.color_scheme }} block-{{ block.id }}" >{{ block.settings.text | escape }} </span>
             </div>
           {%- when 'buttons' -%}
-            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
+            <div class="btn-{{ block.id }} banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %}  banner__buttons--multiple{% endif %} " {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
                 <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
                 <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
               {%- endif -%}
-
             </div>
         {%- endcase -%}
       {%- endfor -%}
@@ -151,6 +152,10 @@
         {
           "value": "medium",
           "label": "t:sections.image-banner.settings.image_height.options__2.label"
+        },
+        {
+          "value": "upper-medium",
+          "label": "Upper Medium"
         },
         {
           "value": "large",
@@ -263,7 +268,7 @@
           "label": "t:sections.all.colors.inverse.label"
         }
       ],
-      "default": "background-1",
+      "default": "accent-2",  
       "label": "t:sections.all.colors.label",
       "info": "t:sections.image-banner.settings.color_scheme.info"
     },
@@ -341,7 +346,7 @@
     {
       "type": "text",
       "name": "t:sections.image-banner.blocks.text.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "text",
@@ -368,13 +373,34 @@
           ],
           "default": "body",
           "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "text-black",
+              "label": "Black"
+            },
+            {
+              "value": "text-white",
+              "label": "White"
+            },
+            {
+              "value": "text-blue",
+              "label": "Blue"
+            }
+          ],
+          "default": "text-white",  
+          "label": "t:sections.all.colors.label",
+          "info": "t:sections.image-banner.settings.color_scheme.info"
         }
       ]
     },
     {
       "type": "buttons",
       "name": "t:sections.image-banner.blocks.buttons.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "text",
