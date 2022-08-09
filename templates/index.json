@@ -279,35 +279,35 @@
         "padding_bottom": 36
       }
     },
-    "1659938794c5c220ec": {
+    "166001302530cff9de": {
       "type": "collection-list",
       "blocks": {
-        "165993879401278610-0": {
+        "1660013025cf720b49-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "zu-unseren-armbandern"
           }
         },
-        "165993879401278610-1": {
+        "1660013025cf720b49-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "sofort-lieferbar"
           }
         },
-        "165993879401278610-2": {
+        "1660013025cf720b49-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         }
       },
       "block_order": [
-        "165993879401278610-0",
-        "165993879401278610-1",
-        "165993879401278610-2"
+        "1660013025cf720b49-0",
+        "1660013025cf720b49-1",
+        "1660013025cf720b49-2"
       ],
       "settings": {
-        "title": "Collections",
+        "title": "",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -315,8 +315,8 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -326,6 +326,6 @@
     "165994500297dc3e36",
     "featured_collection",
     "1659938780a0a553cb",
-    "1659938794c5c220ec"
+    "166001302530cff9de"
   ]
 }

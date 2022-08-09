@@ -146,18 +146,47 @@
           },
           "6b65bac9-71a8-453e-92dd-51ff7cceefaf": {
             "type": "link_list",
-            "disabled": true,
             "settings": {
               "title": "DIE 4CS DER DIAMANTEN",
               "description": "DIE 4CS: CUT, COLOR, CLARITY UND CARAT, STEHEN FÜR DIE WERTIGKEIT EINES DIAMANTEN",
               "url": "shopify:\/\/pages\/diamanten-basiswissen-die-4-cs",
               "featured_image": "shopify:\/\/shop_images\/VEYNOU-Menu-Diamond-Education_370x230_2x_3b6c618e-6b64-4b00-99e1-8ee1ebfd8437.jpg"
             }
+          },
+          "48ead1de-9a16-477f-875d-1305c4b4d38f": {
+            "type": "link_list",
+            "settings": {
+              "title": "VERLOBUNGSRINGE",
+              "description": "SYMBOL DER LIEBE, FÜR DEN MOMENT DER EWIGKEIT",
+              "url": "shopify:\/\/collections\/frontpage",
+              "featured_image": "shopify:\/\/shop_images\/VEYNOU-Menu-Verlobungsringe_370x230_2x_776edbbc-10f5-4117-abf7-7cac3c251659.webp"
+            }
+          },
+          "fdd680ab-7423-471a-bcee-9a4f387a23c3": {
+            "type": "link_list",
+            "settings": {
+              "title": "ZU UNSEREN ARMBÄNDERN",
+              "description": "DIE KRÖNUNG FÜR JEDEN LOOK, DETAILLIERT PER HAND GEARBEITET",
+              "url": "shopify:\/\/collections\/zu-unseren-armbandern",
+              "featured_image": "shopify:\/\/shop_images\/VEYNOU-Homepage-Tennis-2_370x230_2x_d89b3a5f-1e7c-461e-a764-e0b16a5f5852.jpg"
+            }
+          },
+          "1cc45ec0-9e23-4fcf-996f-6bd05e0b36e5": {
+            "type": "link_list",
+            "settings": {
+              "title": "SOFORT LIEFERBAR",
+              "description": "UNSERE SOFORT LIEFERBAREN VEYNOU-HIGHLIGHTS",
+              "url": "shopify:\/\/collections\/sofort-lieferbar",
+              "featured_image": "shopify:\/\/shop_images\/VEYNOU-Homepage-Emerald_370x230_2x_e69f9a9c-2535-4fe1-a640-92720399c027.webp"
+            }
           }
         },
         "block_order": [
           "adeeced8-2c18-44e3-89c1-591cddac32f1",
-          "6b65bac9-71a8-453e-92dd-51ff7cceefaf"
+          "6b65bac9-71a8-453e-92dd-51ff7cceefaf",
+          "48ead1de-9a16-477f-875d-1305c4b4d38f",
+          "fdd680ab-7423-471a-bcee-9a4f387a23c3",
+          "1cc45ec0-9e23-4fcf-996f-6bd05e0b36e5"
         ],
         "settings": {
           "color_scheme": "background-1",

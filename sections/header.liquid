@@ -639,31 +639,17 @@
                           </div>
   
                           <div class="mega-menu-inner__right">
-                            {% assign count = 0 %}
                             {%- for childlink in link.links reversed -%}
-                              {% if count < 2 %}
-                                <!-- For collection -->
-                                {%- if  childlink.type == 'collection_link' and childlink.object.featured_image != nil -%}
-                                  {% assign count = count | plus: 1 %}
-                                  {% assign collection = childlink.object %}
-                                  <div class="mega-menu__thumbnail">
-                                    {% render 'header-card-collection', card_collection: collection, media_aspect_ratio: section.settings.image_ratio %}
-                                  </div>
-                                {%- endif -%}
-                            
-                                <!-- For page -->
-                                {%- if  childlink.type == 'page_link' and childlink.object.url != blank -%}
-                                  {% assign count = count | plus: 1 %}
-                                  <!-- Find page in page blocks -->
-                                  {% assign pageBlock = childlink.object %}
-                                  {%- for block in section.blocks -%}
-                                    {%- if block.settings.url == pageBlock.url -%}
-                                      <div class="mega-menu__thumbnail">
-                                        {% render 'header-card-collection', card_collection: block.settings, media_aspect_ratio: section.settings.image_ratio %}
-                                      </div>    
-                                    {%- endif -%}
-                                  {%- endfor -%}
-                                {%- endif -%}
+                              <!-- For collection -->
+                              {%- if childlink.object.url != blank -%}
+                                {% assign pageBlock = childlink.object %}
+                                {%- for block in section.blocks -%}
+                                  {%- if block.settings.url == pageBlock.url and block.settings.title != blank and block.settings.featured_image != blank -%}
+                                    <div class="mega-menu__thumbnail">
+                                      {% render 'header-card-collection', card_collection: block.settings, media_aspect_ratio: section.settings.image_ratio %}
+                                    </div>    
+                                  {%- endif -%}
+                                {%- endfor -%}
                               {%- endif -%}
                             {%- endfor -%}
                           </div>
