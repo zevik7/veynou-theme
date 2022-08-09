@@ -59,3 +59,42 @@
 .collection-list-view-all {
   margin-top: 2rem;
 }
+
+/* User inner content for collection list */
+.use-inner-content {
+}
+
+.use-inner-content .card > .card__content {
+  padding: 0 50px;
+  position: absolute;
+  margin-bottom: 0;
+  top: auto;
+  bottom: 50px;
+  left: 0;
+}
+
+.use-inner-content .card > .card__content .card__information {
+  padding: 0;
+}
+
+.use-inner-content .card > .card__content .card__heading .card__name{
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.use-inner-content .card > .card__content .card__heading .card__show-all{
+  margin-top: 40px;
+}
+
+.use-inner-content .card > .card__content .card__show-all {
+  color: #363636;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  padding: 12px 24px;
+}
+
+.use-inner-content .card > .card__content .card__show-all::after {
+  box-shadow: none;
+}
