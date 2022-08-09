@@ -96,6 +96,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
+    "cart_type": "drawer",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -145,6 +146,7 @@
           },
           "6b65bac9-71a8-453e-92dd-51ff7cceefaf": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "title": "DIE 4CS DER DIAMANTEN",
               "description": "DIE 4CS: CUT, COLOR, CLARITY UND CARAT, STEHEN FÜR DIE WERTIGKEIT EINES DIAMANTEN",
