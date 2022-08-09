@@ -1,4 +1,5 @@
-.header-card-collection {
+.header-card-collection > .card__content .card__caption {
+  display: block !important;
 }
 
 .header-card-collection .card__media {

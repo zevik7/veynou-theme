@@ -228,7 +228,7 @@
   }
 
   .underline-links-hover:hover a {
-    /* text-decoration: underline; */
+    text-decoration: underline;
     text-underline-offset: 0.3rem;
   }
 }
@@ -236,7 +236,8 @@
 .card--standard.card--media .card__inner .card__information,
 .card--standard.card--text > .card__content .card__heading,
 .card--standard > .card__content .card__badge,
-.card--standard.card--text.article-card > .card__content .card__information {
+.card--standard.card--text.article-card > .card__content .card__information,
+.card--standard > .card__content .card__caption {
   display: none;
 }
 
