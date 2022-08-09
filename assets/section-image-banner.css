@@ -8,6 +8,10 @@
   min-height: 60rem;
 }
 
+.image-banner-center{
+  margin: 0 auto !important;
+}
+
 .block-16597111693a2b361a-0{
   font-size: 20px;
 }
