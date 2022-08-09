@@ -212,6 +212,47 @@
         "padding_bottom": 0
       }
     },
+    "166001302530cff9de": {
+      "type": "collection-list",
+      "blocks": {
+        "1660013025cf720b49-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "zu-unseren-armbandern"
+          }
+        },
+        "1660013025cf720b49-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ohrringe"
+          }
+        },
+        "1660013025cf720b49-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ringe"
+          }
+        }
+      },
+      "block_order": [
+        "1660013025cf720b49-0",
+        "1660013025cf720b49-1",
+        "1660013025cf720b49-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "use_inner_content": true
+      }
+    },
     "16600286586ebfb335": {
       "type": "image-with-text",
       "blocks": {
@@ -366,47 +407,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "166001302530cff9de": {
-      "type": "collection-list",
-      "blocks": {
-        "1660013025cf720b49-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "zu-unseren-armbandern"
-          }
-        },
-        "1660013025cf720b49-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "ohrringe"
-          }
-        },
-        "1660013025cf720b49-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "ringe"
-          }
-        }
-      },
-      "block_order": [
-        "1660013025cf720b49-0",
-        "1660013025cf720b49-1",
-        "1660013025cf720b49-2"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "use_inner_content": true
-      }
     }
   },
   "order": [
@@ -415,8 +415,8 @@
     "165994500297dc3e36",
     "1660028584ff9dc721",
     "featured_collection",
+    "166001302530cff9de",
     "16600286586ebfb335",
-    "1659938780a0a553cb",
-    "166001302530cff9de"
+    "1659938780a0a553cb"
   ]
 }
