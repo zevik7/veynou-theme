@@ -12,6 +12,11 @@
   }
 }
 
+.signin__btn{
+  background-color: #014034 !important;
+  width: 100%;
+}
+
 .customer > h1,
 .customer__title {
   margin-top: 0;

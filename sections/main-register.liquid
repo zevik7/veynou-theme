@@ -14,6 +14,13 @@
   }
 {%- endstyle -%}
 
+<style>
+  .btn__register-form{
+    background-color: #014034 !important;
+    width: 100%;
+  }
+</style>
+
 <div class="customer register section-{{ section.id }}-padding">
   <svg style="display: none">
     <symbol id="icon-error" viewBox="0 0 13 13">
@@ -127,7 +134,7 @@
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
-    <button>
+    <button class="btn__register-form">
       {{ 'customer.register.submit' | t }}
     </button>
   {%- endform -%}
