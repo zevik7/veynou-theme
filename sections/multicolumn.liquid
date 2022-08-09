@@ -56,6 +56,10 @@
     
   }
 
+  .remove-max-width-grid-item{
+    max-width: unset !important;
+  }
+
 </style>
 
 {%- liquid
@@ -97,7 +101,7 @@
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
 
-          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="multicolumn-list__item insta__feedback__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}> 
+          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class=" remove-max-width-grid-item multicolumn-list__item insta__feedback__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}> 
             <span class="{{ block.id }}" >
               <i class="fa-brands fa-instagram"></i>
             </span>
