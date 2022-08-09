@@ -28,7 +28,7 @@
             "button_label_2": "DISCOVER NOW",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "color_scheme": "text-black"
+            "color_scheme": "text-white"
           }
         }
       },
@@ -89,7 +89,7 @@
           "settings": {
             "heading": "VEYNOU diamonds",
             "heading_size": "h2",
-            "color_scheme": "text-black"
+            "color_scheme": "text-white"
           }
         },
         "165994500274f8382d-1": {
@@ -117,7 +117,7 @@
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "color_scheme": "text-black"
+            "color_scheme": "text-white"
           }
         }
       },
@@ -270,7 +270,7 @@
         "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
