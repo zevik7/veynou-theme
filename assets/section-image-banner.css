@@ -35,6 +35,10 @@
   margin: 0;
 }
 
+.block-8f0f8d09-6292-4b54-a5c1-e77c42d95006, .block-165994500274f8382d-1{
+  width: 62%;
+}
+
 .color-text-blue{
   color: blue;
 }
@@ -43,6 +47,23 @@
 }
 .color-text-white{
   color: white;
+}
+.btn-165994500274f8382d-2{
+  opacity: .8;
+  position: relative;
+}
+.btn-165994500274f8382d-2::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.btn-5300f6d6-e108-4600-baa7-3ddfda55aa53{
+  background-color: white;
 }
 
 .btn-1659684723ea8bdf8c-2 a{
