@@ -40,7 +40,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/VEYNOU-Header-Image-Homepage_1600x_0b663740-b86a-465c-862d-e6615ca702a6.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "small",
+        "image_height": "upper-medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "bottom-left",
         "show_text_box": false,
