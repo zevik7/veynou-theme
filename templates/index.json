@@ -89,7 +89,7 @@
           "settings": {
             "heading": "VEYNOU diamonds",
             "heading_size": "h2",
-            "color_scheme": "text-white"
+            "color_scheme": "text-black"
           }
         },
         "165994500274f8382d-1": {
@@ -117,7 +117,7 @@
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "color_scheme": "text-white"
+            "color_scheme": "text-black"
           }
         }
       },
