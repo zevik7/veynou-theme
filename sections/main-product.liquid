@@ -2,6 +2,7 @@
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
+  style="max-width: 1330px"
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -59,7 +60,7 @@
         data-desktop-layout="{{ section.settings.gallery_layout }}"
       >
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
-        <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
+        <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter product__media-gallery-image">
           <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
             {{ "accessibility.skip_to_product_info" | t }}
           </a>
@@ -155,7 +156,7 @@
         {%- if media_count > 1 and section.settings.gallery_layout != 'stacked' or section.settings.mobile_thumbnails == 'show' -%}
           <slider-component
             id="GalleryThumbnails-{{ section.id }}"
-            class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% if section.settings.mobile_thumbnails == 'hide' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+            class="product__media-gallery-thumbnail thumbnail-slider slider-mobile-gutter quick-add-hidden{% if section.settings.mobile_thumbnails == 'hide' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
           >
             <button
               type="button"
@@ -567,6 +568,25 @@
                   </div>
                 </div>
               </noscript>
+
+            <!-- credit-promotion -->
+            <div class="delivery_time">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class="">
+                <g xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path d="M452,40h-24V0h-40v40H124V0H84v40H60C26.916,40,0,66.916,0,100v352c0,33.084,26.916,60,60,60h284.506L512,338.064V100    C512,66.916,485.084,40,452,40z M356,442.397V370c0-11.028,8.972-20,20-20h68.975L356,442.397z M472,310h-96    c-33.084,0-60,26.916-60,60v102H60c-11.028,0-20-8.972-20-20V188h432V310z M472,148H40v-48c0-11.028,8.972-20,20-20h24v40h40V80    h264v40h40V80h24c11.028,0,20,8.972,20,20V148z" fill="#ffffff" data-original="#000000"></path>
+                  </g>
+                </g>
+              </svg>
+
+              <span class="text">
+                <p>
+                  <strong>Made to Order: </strong>
+                  Zwischen 04.09.-14.09. bei Dir
+                </p>
+              </span>
+            </div>
+
             {%- when 'buy_buttons' -%}
               <div {{ block.shopify_attributes }}>
                 <product-form class="product-form">
@@ -655,6 +675,18 @@
                   </template>
                 </pickup-availability>
               </div>
+            
+            <!-- credit-promotion -->
+            <div class="credit-promotion">
+              <p class="text">
+                30 €/Monat. In 24 Raten mit
+                <span class="logo">
+                  Klarna
+                </span>
+                .
+                <button class="link">Mehr erfahren</button>
+              </p>
+            </div>
 
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
             {%- when 'rating' -%}
