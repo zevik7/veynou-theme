@@ -1,21 +1,5 @@
 {
   "sections": {
-    "1660102038abfa2a57": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/VEYNOU-Collection-Page-Banner-Bracelets-green.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "accent-2",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -44,10 +28,10 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 12,
+        "products_per_page": 16,
         "columns_desktop": 4,
         "image_ratio": "adapt",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
@@ -61,7 +45,6 @@
     }
   },
   "order": [
-    "1660102038abfa2a57",
     "banner",
     "166010276621e3af63",
     "product-grid"
