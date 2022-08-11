@@ -106,8 +106,14 @@
 }
 
 .rich-text__heading span {
-  color: #909090;
+  /* color: #909090; */
+  color: #1C1B1B;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.rich-text__heading{
+  margin-bottom: 45px;
 }

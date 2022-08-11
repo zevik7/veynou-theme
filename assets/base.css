@@ -234,8 +234,10 @@ html.no-js .no-js-hidden {
 }
 
 .page-width {
-  max-width: var(--page-width);
+  /* max-width: var(--page-width); */
   margin: 0 auto;
+  max-width: 77vw;
+
   /* padding: 0 1.5rem; */
 }
 
@@ -2980,3 +2982,4 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
