@@ -721,12 +721,11 @@
       if (this.predictiveSearch && this.predictiveSearch.isOpen) 
         return;
       
-      // Hide when meet footer
-      if (scrollTop > this.headerBounds.bottom) {
-        if (footer.getClientRects()[0].top < 200)
-          requestAnimationFrame(this.hide.bind(this));
-        else requestAnimationFrame(this.reveal.bind(this));
+      // Hide when scroll to bottom
+      if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+        requestAnimationFrame(this.hide.bind(this));
       }
+      else requestAnimationFrame(this.reveal.bind(this));
 
       this.currentScrollTop = scrollTop;
     }
