@@ -1245,7 +1245,7 @@ a.product__text {
 }
 
 .credit-promotion .text {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
   text-align: center;
   color: #17120f;
   font-size: 12px;

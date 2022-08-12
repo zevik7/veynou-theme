@@ -33,7 +33,7 @@
 }
 
 .mega-menu-inner__right {
-  width: 660px;
+  width: 740px;
   min-width: 425px;
   display: flex;
   justify-content: center;
@@ -99,7 +99,7 @@
 }
 
 .mega-menu__thumbnail {
-  width: 50%;
+  width: 370px;
 }
 
 .header--top-center .mega-menu__list {

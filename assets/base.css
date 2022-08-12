@@ -2246,8 +2246,7 @@ input[type="checkbox"] {
 .announcement-bar__message {
   padding: 1rem 0;
   margin: 0;
-  letter-spacing: 0.1rem;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /* section-header */
@@ -2983,3 +2982,19 @@ details-disclosure > details {
   }
 }
 
+/* Overide default font */
+@font-face {
+  font-family: "Freight Neo Pro"; 
+  src: url("//db.onlinewebfonts.com/t/251dff4c8f7ab0a6f3258b61f6527ad5.eot"); 
+  src: url("//db.onlinewebfonts.com/t/251dff4c8f7ab0a6f3258b61f6527ad5.eot?#iefix") 
+  format("embedded-opentype"), 
+  url("//db.onlinewebfonts.com/t/251dff4c8f7ab0a6f3258b61f6527ad5.woff2") 
+  format("woff2"), url("//db.onlinewebfonts.com/t/251dff4c8f7ab0a6f3258b61f6527ad5.woff") 
+  format("woff"), url("//db.onlinewebfonts.com/t/251dff4c8f7ab0a6f3258b61f6527ad5.ttf") 
+  format("truetype"), url("//db.onlinewebfonts.com/t/251dff4c8f7ab0a6f3258b61f6527ad5.svg#Freight Neo Pro")
+  format("svg");
+}
+
+h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a, #nav li a, div.title a, .headline, .subtitle, p {
+  font-family: "Freight Neo Pro" !important;
+}
