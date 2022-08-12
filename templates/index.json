@@ -299,6 +299,7 @@
     },
     "1659938780a0a553cb": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "1659938780ef8cc141-0": {
           "type": "column",
@@ -407,6 +408,117 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1660276216194a671a": {
+      "type": "insta-feedback",
+      "blocks": {
+        "1660276216bc0501b6-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "title": "",
+            "text": "<p>Walk through the city 🤍 #veynou #veynoudiamonds<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1660276216bc0501b6-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.jpg",
+            "title": "",
+            "text": "<p>Take it slow 🤍✨ #veynou #veynoudiamonds<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1660276216bc0501b6-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.jpg",
+            "title": "",
+            "text": "<p>Be your own muse 🤍 #veynou #veynoudiamonds<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "acd34d67-db52-49c2-b534-5ae5eeaac951": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_afb2a546-e068-4db4-894f-312295b97576.jpg",
+            "title": "",
+            "text": "<p>Our beautiful @leathurau wearing the Eden Necklace 💚✨#veynou #veynoudiamonds<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c4c93382-f30a-4ba4-9eb5-fa5d30ed7b09": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_4635c185-494b-49f8-a7f4-40bf8640aec2.jpg",
+            "title": "",
+            "text": "<p>Showroom aesthetic🤍 #veynou #veynoudiamonds<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "a0736510-393c-4e12-82e0-eaa469d318d2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_718d152d-0776-4590-ad98-105299a8276e.jpg",
+            "title": "",
+            "text": "<p>Tea time💙 #veynou #veynoudiamonds<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "befb1f2b-6f97-43fe-8c03-34d449487825": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7.jpg",
+            "title": "",
+            "text": "<p>Mindset is everything ✨ #veynou #veynoudiamonds<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c0d19d89-912f-4910-a5e5-948f233d10b9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8.jpg",
+            "title": "",
+            "text": "<p>Walk through the city 🤍 #veynou #veynoudiamonds<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660276216bc0501b6-0",
+        "1660276216bc0501b6-1",
+        "1660276216bc0501b6-2",
+        "acd34d67-db52-49c2-b534-5ae5eeaac951",
+        "c4c93382-f30a-4ba4-9eb5-fa5d30ed7b09",
+        "a0736510-393c-4e12-82e0-eaa469d318d2",
+        "befb1f2b-6f97-43fe-8c03-34d449487825",
+        "c0d19d89-912f-4910-a5e5-948f233d10b9"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -417,6 +529,7 @@
     "featured_collection",
     "166001302530cff9de",
     "16600286586ebfb335",
-    "1659938780a0a553cb"
+    "1659938780a0a553cb",
+    "1660276216194a671a"
   ]
 }
