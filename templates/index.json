@@ -297,6 +297,57 @@
         "padding_bottom": 0
       }
     },
+    "1660289229ef8fa4f6": {
+      "type": "image-banner",
+      "blocks": {
+        "1660289229ed2a1314-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Kontaktiere uns",
+            "heading_size": "h1",
+            "color_scheme": "text-black"
+          }
+        },
+        "1660289229ed2a1314-1": {
+          "type": "text",
+          "settings": {
+            "text": "Du hast Fragen? Buche einen virtuellen Termin oder besuche uns in unserem Showroom in Frankfurt.",
+            "text_style": "body",
+            "color_scheme": "text-black"
+          }
+        },
+        "1660289229ed2a1314-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Jetzt beraten lassen",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "color_scheme": "text-black"
+          }
+        }
+      },
+      "block_order": [
+        "1660289229ed2a1314-0",
+        "1660289229ed2a1314-1",
+        "1660289229ed2a1314-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "1659938780a0a553cb": {
       "type": "multicolumn",
       "disabled": true,
@@ -529,6 +580,7 @@
     "featured_collection",
     "166001302530cff9de",
     "16600286586ebfb335",
+    "1660289229ef8fa4f6",
     "1659938780a0a553cb",
     "1660276216194a671a"
   ]
