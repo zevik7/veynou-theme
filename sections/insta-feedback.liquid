@@ -101,9 +101,9 @@
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
           <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="insta-feedback-item remove-max-width-grid-item multicolumn-list__item insta__feedback__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}> 
-            <!-- <span class="{{ block.id }}" >
+            <span class="{{ block.id }}" >
               <i class="fa-brands fa-instagram"></i>
-            </span> -->
+            </span>
             <div class="pop-up-insta-feedback">
               <div class="pop-up-insta-feedback-item">
                 <img src="{{ block.settings.image | image_url}}" height="500" width="auto" alt="addf" loading="lazy">
