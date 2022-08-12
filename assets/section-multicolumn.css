@@ -226,3 +226,27 @@
     display: list-item;
   }
 }
+
+
+.pop-up-insta-feedback{
+  position: fixed;
+  z-index: 99999;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.3);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.pop-up-insta-feedback.active{
+
+  display: flex;
+}
+
+.pop-up-insta-feedback div{
+  display: flex;
+  background-color: white;
+}
