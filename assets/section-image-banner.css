@@ -4,6 +4,16 @@
   flex-direction: column;
 }
 
+.block-1660289229ed2a1314-1{
+  font-size: 17px;
+  width: 75%;
+
+}
+
+.block-1660289229ed2a1314-0{
+  font-size: 32px;
+}
+
 .btn-165994500274f8382d-2,.block-165994500274f8382d-0, .block-165994500274f8382d-1, .block-8f0f8d09-6292-4b54-a5c1-e77c42d95006{
   transform: translate(40px, 50px);
   
@@ -64,11 +74,11 @@
 .color-text-white{
   color: white;
 }
-.btn-165994500274f8382d-2{
+.btn-165994500274f8382d-2, .btn-1660289229ed2a1314-2{
   opacity: .8;
   position: relative;
 }
-.btn-165994500274f8382d-2::before{
+.btn-165994500274f8382d-2::before , .btn-1660289229ed2a1314-2::before{
   position: absolute;
   content: "";
   width: 100%;
