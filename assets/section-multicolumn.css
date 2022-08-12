@@ -227,6 +227,10 @@
   }
 }
 
+.box-modal-wrapper:hover{
+  display: flex;
+}
+
 
 .pop-up-insta-feedback{
   position: fixed;
@@ -236,17 +240,57 @@
   background: rgba(0,0,0,.3);
   top: 0;
   left: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   display: none;
 }
 .pop-up-insta-feedback.active{
-
   display: flex;
 }
 
-.pop-up-insta-feedback div{
+.pop-up-insta-feedback-item{
+  display: flex;
+}
+
+.pop-up-insta-feedback-item .description{
   display: flex;
   background-color: white;
+  flex-direction: column;
+}
+
+.pop-up-insta-feedback-item .description .header{
+  display: flex;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.pop-up-insta-feedback-item .description .header h6{
+  color: black;
+  font-size: 18px;
+  margin: 0;
+
+}
+
+.pop-up-insta-feedback-item .description .header p{
+  color: black;
+  font-size: 12px;
+}
+
+.pop-up-insta-feedback-item .body div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.pop-up-insta-feedback-item .body{
+  padding: 2rem 3rem;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.pop-up-insta-feedback-item .body p {
+  margin: 2rem 0;
+}
+
+.pop-up-insta-feedback-item .days{
+font-size: 11px;
 }

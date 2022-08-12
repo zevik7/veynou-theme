@@ -101,17 +101,30 @@
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
           <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="insta-feedback-item remove-max-width-grid-item multicolumn-list__item insta__feedback__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}> 
-            <span class="{{ block.id }}" >
+            <span class="box-modal-wrapper" >
               <i class="fa-brands fa-instagram"></i>
             </span>
             <div class="pop-up-insta-feedback">
               <div class="pop-up-insta-feedback-item">
                 <img src="{{ block.settings.image | image_url}}" height="500" width="auto" alt="addf" loading="lazy">
-                <div>
-                  <p>
-                    <img src="https://cdn.shopify.com/s/files/1/0584/9048/6843/files/instagram-logo.webp?v=1660215178" height="100" width="auto" alt="addf" loading="lazy">
-                  </p>
-                  <p>{{block.settings.text}}</p>
+                <div class="description">
+                  <div  class="header">
+                    <img src="https://cdn.shopify.com/s/files/1/0584/9048/6843/files/instagram-logo.webp?v=1660215178" height="50" width="auto" alt="addf" loading="lazy">
+                    <div>
+                      <h6>veynou</h6>
+                      <p>@veynou</p>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <div>
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <p>{{ block.settings.text }}</p>
+                  </div>
+                  <div class="days">
+                    AUGUST 11 •View on Instagram
+                  </div>
                 </div>
               </div>
             </div>
